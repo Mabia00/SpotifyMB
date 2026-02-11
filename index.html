@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd65ad5643.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Spotify MB</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nave-logo">
+                <i class="fa-brands fa-spotify"></i>
+            </div>
+
+            <div class="nave-library">
+                <i class="fa-solid fa-book"></i>
+                <p>Sua biblioteca +</p>
+            </div>
+
+            <div class="nave-playlist">
+                <h5>Crie sua primeira playlist</h5>
+                <p>É fácil, vamos te ajudar.</p>
+                <button>Criar playlist</button>
+            </div>
+
+            <div class="nave-podcast">
+                <h5>Que tal seguir um podcast?</h5>
+                <p>Avisaremos você sobre novos episódios.</p>
+                <button>Explore podcasts</button>
+            </div>
+
+            <footer class="nave-footer">
+                <a href="#">Legal</a>
+                <a href="#">Centro de Privacidade</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre anúncios</a>
+                <a href="#">Acessibilidade</a>
+            </footer>
+
+            <button class="nave-lang-button">
+                <i class="fa-solid fa-globe"></i> Português do Brasil
+            </button>
+        </nav>
+
+        <main class="main">
+            <header class="header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="O que você quer ouvir?">
+                </div>
+            </header>
+
+            <section class="content">
+                <h2>Artistas populares</h2>
+                <div class="artists-grid" id="artists-grid"></div>
+
+                <h2>Álbuns populares</h2>
+                <div class="albums-grid" id="albums-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Testar o Premium de graça</h2>
+            <p>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
+        </div>
+        <button>Inscreva-se grátis</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

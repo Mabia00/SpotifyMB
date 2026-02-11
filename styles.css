@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #121212;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 90px; 
+}
+
+.nave-logo i {
+    font-size: 24px;
+}
+
+.nave-library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nave-library i, .nave-library p {
+    font-size: 14px;
+    color: #b7b3b6;
+}
+
+
+.nave-playlist, .nave-podcast {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.nave-playlist p, .nave-podcast p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.sidebar button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.nave-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nave-footer a {
+    text-decoration: none;
+    color: #b7b3b6;
+    font-size: 12px;
+}
+
+.nave-lang-button {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    width: fit-content;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 8px 16px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artist-card, .album-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artist-card:hover, .album-card:hover {
+    background-color: #282828;
+}
+
+.artist-card img, .album-card img {
+    width: 100%;
+    border-radius: 50%; 
+    margin-bottom: 12px;
+}
+
+.album-card img {
+    border-radius: 8px; 
+}
+
+.artist-card h3, .album-card h3 {
+    font-size: 12px;
+}
+
+.artist-card p, .album-card p {
+    font-size: 10px;
+    color: #b7b3b6;
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #af2896, #509bf5);
+    padding: 8px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 14px;
+}
+
+.banner p {
+    font-size: 10px;
+}
+
+.banner button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
